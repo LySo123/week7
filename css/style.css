@@ -316,6 +316,7 @@ hr {
         aspect-ratio: 290 / 260;
         display: block;
         margin: 0 auto; 
+        transition: opacity 0.5s ease-in-out;
     }
 
     .image-actions {
