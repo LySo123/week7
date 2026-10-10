@@ -1,0 +1,19 @@
+{
+  "fName": "Garfield",
+  "lName": "Arbuckle",
+  "age": 46,
+  "email": "garfield@lasagna.com",
+  "skills": [
+    "Lasanje söömise tippspetsialist",
+    "Diivanil lebamise ekspert",
+    "Professionaalne magaja",
+    "Väga hea toidu märkamisoskus",
+    "Väga tugev esmaspäevade vältimise kompetents",
+    "Kõrge motivatsioon toidu olemasolu korral"
+  ],
+  "subjects": [
+    "Lasanje professionaalne tarbimine",
+    "Magamise ja puhkamise tehnika",
+    "Diivanil lebamise kunst"
+  ]
+}

@@ -22,3 +22,32 @@ targetImage.addEventListener("click", () => {
 
 });
 
+const fNameSpan = document.querySelector("#fName");
+const lNameSpan = document.querySelector("#lName");
+const fullNameSpan = document.querySelector("#fullName");
+const ageSpan = document.querySelector("#age");
+const emailSpan = document.querySelector("#email");
+const skillsList = document.querySelector("#skills");
+const subjectsList = document.querySelector("#subjects");
+
+function fillList(list, items) {
+  for (let j = 0; j < items.length; j++) {
+    const li = document.createElement("li");
+    li.textContent = items[j];
+    list.appendChild(li);
+  }
+}
+
+fetch("profile.json")
+  .then((response) => response.json())
+  .then((person) => {
+    fNameSpan.textContent = person.fName;
+    lNameSpan.textContent = person.lName;
+    fullNameSpan.textContent = person.fName + " " + person.lName;
+    ageSpan.textContent = person.age;
+    emailSpan.textContent = person.email;
+
+    fillList(skillsList, person.skills);
+    fillList(subjectsList, person.subjects);
+  })
+  .catch((error) => console.error("Andmete laadimine ebaõnnestus:", error));
